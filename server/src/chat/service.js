@@ -6,14 +6,22 @@ module.exports.requestChat = async (req, res) => {
     return res.status(200).json(messages);
   } catch (error) {
     console.error(error);
-    return res.status(500).send("Error while getting a message");
+    return res.status(500).send("Error while getting a chat");
   }
 };
 
-module.exports.postMessage = (req, res) => {
+module.exports.sendMessage = (req, res) => {
   try {
   } catch (error) {
     console.error(error);
     return res.status(500).send("Error while getting a message");
+  }
+};
+
+module.exports.deleteMessage = (req, res) => {
+  try {
+  } catch (error) {
+    console.error(error);
+    return res.status(500).send("Error while deleting a message");
   }
 };

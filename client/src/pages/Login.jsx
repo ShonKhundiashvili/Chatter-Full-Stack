@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 
-function Login() {
+export function Login() {
   const navigate = useNavigate();
 
   function handleSubmit(event) {
@@ -14,4 +15,6 @@ function Login() {
   return <div>In register</div>;
 }
 
-export default Login;
+const Field = styled.input`
+  
+`
